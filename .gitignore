@@ -5,3 +5,5 @@
 /incoming/
 /temp/
 /lib/
+/settings/
+*.iml
