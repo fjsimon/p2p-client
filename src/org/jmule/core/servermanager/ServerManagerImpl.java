@@ -235,9 +235,9 @@ public class ServerManagerImpl extends JMuleAbstractManager implements InternalS
 	}
 
 	public void connect(Server server) throws ServerManagerException {
-		if (connected_server != null)
-			throw new ServerManagerException(
-					"JMule is already connected (connecting) to another server");
+		if (connected_server != null) {
+			throw new ServerManagerException("JMule is already connected (connecting) to another server");
+		}
 		if (reconnect_task != null)
 			server_manager_timer.removeTask(reconnect_task);
 		String ip = server.getAddress();
