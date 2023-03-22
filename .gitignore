@@ -6,4 +6,7 @@
 /temp/
 /lib/
 /settings/
+.settings
 *.iml
+*.classpath
+*.project
